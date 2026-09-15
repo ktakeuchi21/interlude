@@ -1,0 +1,44 @@
+name: Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm run install:ci
+      - run: npm run check:public
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm test
+      - run: npm run test:worker
+      - run: npm run build
+      - name: Verify local migration tracking
+        run: |
+          npm run db:migrate:local
+          npm run db:migrate:local
+      - name: Verify local API behavior
+        run: |
+          npm run dev -- --host 127.0.0.1 > /tmp/interlude-dev.log 2>&1 &
+          app_pid=$!
+          trap 'kill "$app_pid" 2>/dev/null || true' EXIT
+          node --input-type=module -e 'for (let i=0; i<60; i++) { try { const r=await fetch("http://localhost:5173/api/state"); if(r.status===401) process.exit(0); } catch {} await new Promise(r=>setTimeout(r,1000)); } process.exit(1);'
+          INTERLUDE_TEST_URL=http://localhost:5173 node --test tests/http.test.mjs

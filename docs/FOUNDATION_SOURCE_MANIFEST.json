@@ -1,0 +1,149 @@
+[
+  {
+    "id": "mdn-client-server",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/First_steps/Client-Server_overview",
+    "resolvedUrl": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/First_steps/Client-Server_overview",
+    "file": "mdn-client-server.html",
+    "bytes": 210031,
+    "sha256": "2e9b7de0a9b95ba726d63a75ace146e85d443450023153c8d495283041880d53",
+    "retrievedAt": "2026-09-15T02:57:30.136153+00:00"
+  },
+  {
+    "id": "mdn-http",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
+    "resolvedUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
+    "file": "mdn-http.html",
+    "bytes": 228458,
+    "sha256": "4eca0bb3a8bee877a7c18d4a54d05f4e14aadcecf8baae824ba7f9e48da024cd",
+    "retrievedAt": "2026-09-15T02:57:30.066871+00:00"
+  },
+  {
+    "id": "mdn-idempotent",
+    "url": "https://developer.mozilla.org/en-US/docs/Glossary/Idempotent",
+    "resolvedUrl": "https://developer.mozilla.org/en-US/docs/Glossary/Idempotent",
+    "file": "mdn-idempotent.html",
+    "bytes": 187822,
+    "sha256": "a50776e4a956c0ebe9db4a39773e909ef67e9c77cbd4778a07a60c1735cc677d",
+    "retrievedAt": "2026-09-15T02:57:30.089309+00:00"
+  },
+  {
+    "id": "github-context",
+    "url": "https://docs.github.com/en/enterprise-cloud%40latest/copilot/concepts/prompting/prompt-engineering",
+    "resolvedUrl": "https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/prompting/prompt-engineering",
+    "file": "github-context.html",
+    "bytes": 645435,
+    "sha256": "a20cc8a874a39f1ff72690dc3885d1d94c97e083aba80bcbc5af0f21579a3b5d",
+    "retrievedAt": "2026-09-15T02:57:30.749927+00:00"
+  },
+  {
+    "id": "github-responsible",
+    "url": "https://docs.github.com/en/copilot/responsible-use/agents",
+    "resolvedUrl": "https://docs.github.com/en/copilot/responsible-use/agents",
+    "file": "github-responsible.html",
+    "bytes": 772971,
+    "sha256": "aaf318b55dca81b73ad9d15da12e229a1d8315d031b2ebdce735efdc97ef48ea",
+    "retrievedAt": "2026-09-15T02:57:30.459448+00:00"
+  },
+  {
+    "id": "google-small",
+    "url": "https://google.github.io/eng-practices/review/developer/small-cls.html",
+    "resolvedUrl": "https://google.github.io/eng-practices/review/developer/small-cls.html",
+    "file": "google-small.html",
+    "bytes": 15500,
+    "sha256": "0637b70bbb8235a8a3dfe86041e206bd91db35b4b8a4c34cb938f4d8fd6bf5c3",
+    "retrievedAt": "2026-09-15T02:57:29.869675+00:00"
+  },
+  {
+    "id": "google-review",
+    "url": "https://google.github.io/eng-practices/review/reviewer/looking-for.html",
+    "resolvedUrl": "https://google.github.io/eng-practices/review/reviewer/looking-for.html",
+    "file": "google-review.html",
+    "bytes": 15075,
+    "sha256": "5946a2fa713dbafed9a2846e187be7705e3f3240c2b925f13d45530791c0e4af",
+    "retrievedAt": "2026-09-15T02:57:30.099558+00:00"
+  },
+  {
+    "id": "playwright-testing",
+    "url": "https://playwright.dev/docs/best-practices",
+    "resolvedUrl": "https://playwright.dev/docs/best-practices",
+    "file": "playwright-testing.html",
+    "bytes": 126293,
+    "sha256": "bbe61f4d55fa8fec577ccf2f399d4c4a79ac17d5d1b6bb61606e0426c775fd83",
+    "retrievedAt": "2026-09-15T02:57:30.489645+00:00"
+  },
+  {
+    "id": "owasp-authorization",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+    "resolvedUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+    "file": "owasp-authorization.html",
+    "bytes": 100788,
+    "sha256": "368296f7add7ffd6f175d4de8f2e03dbbd287f6eda75e85603b2d39919913c30",
+    "retrievedAt": "2026-09-15T02:57:30.375598+00:00"
+  },
+  {
+    "id": "owasp-secrets",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+    "resolvedUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+    "file": "owasp-secrets.html",
+    "bytes": 178654,
+    "sha256": "9118ee3dd98f8198c52b5d1237bd9b65582d0347b089dff51b46a7a554f8d5c9",
+    "retrievedAt": "2026-09-15T02:57:30.397764+00:00"
+  },
+  {
+    "id": "ahrq-workflow",
+    "url": "https://digital.ahrq.gov/health-it-tools-and-resources/evaluation-resources/workflow-assessment-health-it-toolkit/examples",
+    "resolvedUrl": "https://digital.ahrq.gov/health-it-tools-and-resources/evaluation-resources/workflow-assessment-health-it-toolkit/examples",
+    "file": "ahrq-workflow.html",
+    "bytes": 69396,
+    "sha256": "d328b4a28f557f077129ae84847edf7f36a3cfc488a43fa4b11e660da6ce7188",
+    "retrievedAt": "2026-09-15T02:57:30.750393+00:00"
+  },
+  {
+    "id": "fda-patient-input",
+    "url": "https://www.fda.gov/media/139088/download",
+    "resolvedUrl": "https://www.fda.gov/media/139088/download",
+    "file": "fda-patient-input.pdf",
+    "bytes": 930754,
+    "sha256": "558d83564589e8d4b67da99608d36a3d77e91a50146aaf518ebba3f4a27bccb5",
+    "retrievedAt": "2026-09-15T02:57:30.787247+00:00"
+  },
+  {
+    "id": "fda-promotion",
+    "url": "https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/opdp-frequently-asked-questions-faqs",
+    "resolvedUrl": "https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/opdp-frequently-asked-questions-faqs",
+    "file": "fda-promotion.html",
+    "bytes": 63903,
+    "sha256": "5378e87d23910044178656be7e2bc1540a09adbdf224300fa1f65887cdb6beeb",
+    "retrievedAt": "2026-09-15T02:57:30.641512+00:00"
+  },
+  {
+    "id": "hhs-minimum",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/minimum-necessary-requirement/index.html",
+    "error": "HTTP Error 403: Forbidden",
+    "inspectionMethod": "Official page text retrieved and inspected with the web tool on 2026-09-15; direct snapshot download returned 403."
+  },
+  {
+    "id": "hhs-deidentification",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html",
+    "error": "HTTP Error 403: Forbidden",
+    "inspectionMethod": "Official page text retrieved and inspected with the web tool on 2026-09-15; direct snapshot download returned 403."
+  },
+  {
+    "id": "cms-prior-auth",
+    "url": "https://www.cms.gov/initiatives/burden-reduction/overview/interoperability/frequently-asked-questions/general",
+    "resolvedUrl": "https://www.cms.gov/initiatives/burden-reduction/overview/interoperability/frequently-asked-questions/general",
+    "file": "cms-prior-auth.html",
+    "bytes": 205783,
+    "sha256": "5ba0b5053ba0f2426b75c7722ee7d62babb46df12525b05f7ba04438578a5f1a",
+    "retrievedAt": "2026-09-15T02:57:31.248553+00:00"
+  },
+  {
+    "id": "nist-profile",
+    "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+    "resolvedUrl": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+    "file": "nist-profile.pdf",
+    "bytes": 1174643,
+    "sha256": "6e73620ab6b64e90ef2c04bf0e0d6246185a2f4b1b13cab0df494496cff89b6a",
+    "retrievedAt": "2026-09-15T02:57:31.710535+00:00"
+  }
+]

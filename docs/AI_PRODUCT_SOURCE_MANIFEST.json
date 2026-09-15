@@ -1,0 +1,123 @@
+[
+  {
+    "id": "latency-optimization",
+    "url": "https://developers.openai.com/api/docs/guides/latency-optimization.md",
+    "bytes": 24037,
+    "sha256": "1a57f7b85e4d6c43dc7f621a0a8e387cb7b452636cda2087f6e1f12a87c196e8",
+    "inspected": "2026-09-14",
+    "file": "latency-optimization.md"
+  },
+  {
+    "id": "cost-optimization",
+    "url": "https://developers.openai.com/api/docs/guides/cost-optimization.md",
+    "bytes": 1807,
+    "sha256": "c5d4e8f28445b622ac479a1aecfc8714debb4e0646dc2df75fad3bded6573024",
+    "inspected": "2026-09-14",
+    "file": "cost-optimization.md"
+  },
+  {
+    "id": "prompt-engineering",
+    "url": "https://developers.openai.com/api/docs/guides/prompt-engineering.md",
+    "bytes": 37414,
+    "sha256": "3a077358aaa7a23464ccaae32d684467d2972491c5889517ae1a72753e9d1e6d",
+    "inspected": "2026-09-14",
+    "file": "prompt-engineering.md"
+  },
+  {
+    "id": "retrieval",
+    "url": "https://developers.openai.com/api/docs/guides/retrieval.md",
+    "bytes": 55666,
+    "sha256": "aa8f56227f9a4827743f547f6d7c101768e35b1a14ba4c0fe89e0916bc2e81e0",
+    "inspected": "2026-09-14",
+    "file": "retrieval.md"
+  },
+  {
+    "id": "function-calling",
+    "url": "https://developers.openai.com/api/docs/guides/function-calling.md",
+    "bytes": 75013,
+    "sha256": "078619f5bb7196abc4b162e23be8427b1243a8431aa4d14d3d869a8cd93ccc0b",
+    "inspected": "2026-09-14",
+    "file": "function-calling.md"
+  },
+  {
+    "id": "evaluation-best-practices",
+    "url": "https://developers.openai.com/api/docs/guides/evaluation-best-practices.md",
+    "bytes": 23604,
+    "sha256": "93aeca2e3b1fc3df153d004ed8227b48f2d6c55e3786c2fb33c6c0af6eb92164",
+    "inspected": "2026-09-14",
+    "file": "evaluation-best-practices.md"
+  },
+  {
+    "id": "production-best-practices",
+    "url": "https://developers.openai.com/api/docs/guides/production-best-practices.md",
+    "bytes": 16898,
+    "sha256": "8296bb695a59dc258558af540eab9431a0a65c2ffb4bf6bc0be1f515d5756dad",
+    "inspected": "2026-09-14",
+    "file": "production-best-practices.md"
+  },
+  {
+    "id": "pair-trust",
+    "url": "https://pair.withgoogle.com/chapter/explainability-trust/",
+    "bytes": 65845,
+    "sha256": "7e9e58bc101889b2b1928584afd9e447f7ae29f9ede268a0594ec1f6d45112c0",
+    "file": "pair-trust.html",
+    "inspected": "2026-09-14"
+  },
+  {
+    "id": "pair-errors",
+    "url": "https://pair.withgoogle.com/chapter/errors-failing/",
+    "bytes": 46523,
+    "sha256": "6d878f02c1456ac5defa5c43398206c38b926f3e309ea9233e71a5280431421c",
+    "file": "pair-errors.html",
+    "inspected": "2026-09-14",
+    "transportSha256": "13dc07a79b98841d51e30771ecd638629abdd56e9d4efdfc7b52746f83fb7a5a"
+  },
+  {
+    "id": "pair-data",
+    "url": "https://pair.withgoogle.com/chapter/data-collection/",
+    "bytes": 70937,
+    "sha256": "030f67b73c2c890ce6b133e5de66d6528139cbc65a343e28c1397143df34f70d",
+    "file": "pair-data.html",
+    "inspected": "2026-09-14"
+  },
+  {
+    "id": "pair-feedback",
+    "url": "https://pair.withgoogle.com/chapter/feedback-controls/",
+    "bytes": 44067,
+    "sha256": "2198dd520a62216385d045ee89af6a6daada0cb2eaef015307d149c9067456e4",
+    "file": "pair-feedback.html",
+    "inspected": "2026-09-14"
+  },
+  {
+    "id": "pair-needs",
+    "url": "https://pair.withgoogle.com/chapter/user-needs/",
+    "bytes": 47688,
+    "sha256": "622c785576378c7b3a118174bb6ae8face84c9169551e61621149e2800c7fd78",
+    "file": "pair-needs.html",
+    "inspected": "2026-09-14"
+  },
+  {
+    "id": "google-monitoring",
+    "url": "https://developers.google.com/machine-learning/guides/rules-of-ml",
+    "bytes": 152644,
+    "sha256": "ad7f8f8bab023f73503bd546230f8fb50cb26bed6f9a58dc0541a3644d544597",
+    "file": "google-monitoring.html",
+    "inspected": "2026-09-14"
+  },
+  {
+    "id": "google-inference",
+    "url": "https://developers.google.com/machine-learning/glossary",
+    "bytes": 794035,
+    "sha256": "0f6338e791edcdac944d468f7a00322e8af7452c92d19e69e6921ed62fb48cde",
+    "file": "google-inference.html",
+    "inspected": "2026-09-14"
+  },
+  {
+    "id": "anthropic-patterns",
+    "url": "https://www.anthropic.com/engineering/building-effective-agents",
+    "bytes": 212431,
+    "sha256": "dd5d3f6253b46f714f3625015695100b155faffaf9fe17f03ec2d3d43bdd0c44",
+    "file": "anthropic-patterns.html",
+    "inspected": "2026-09-14"
+  }
+]
