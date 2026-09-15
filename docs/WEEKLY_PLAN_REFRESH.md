@@ -4,6 +4,8 @@ The personal deployment uses an existing Codex task on an awake laptop for Monda
 
 ## Bounded workflow
 
+Read [Lesson voice](LESSON_STYLE.md) before authoring or reviewing teaching. Explain concepts directly; keep routine publisher attribution in source notes rather than repeatedly saying “Google defines…” in the spoken lesson. Preserve attribution when it changes the meaning or reliability of a claim. This editorial preference also applies when material updates require a new version.
+
 1. Read the current private deployment's source, learning state and existing weekly deliveries. Respect user edits, active course order, prior choices, and saved versions. Use a full authorized export when database projections truncate lesson JSON. Keep exports outside Git.
 2. Build a private input file with `ownerId` and `state` matching that actual deployment. Run `node scripts/prepare-plan-week.mjs input.json output.json`. The helper performs no networking or paid generation.
 3. It selects at most three suggestions and at most one active foundation lesson due after 28 days since its source review or last check. If the week is already delivered, verify any outstanding work and stop.

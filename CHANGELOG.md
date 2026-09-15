@@ -1,5 +1,10 @@
 # Changelog
 
+## Direct teaching style — 2026-09-15
+
+- Update lesson preparation and review instructions to avoid repetitive “Google defines…” style source introductions while retaining citations, meaningful attribution, and uncertainty.
+- Add a lesson voice guide and connect it to the weekly authoring workflow. Existing released lessons and recordings are unchanged.
+
 ## README gallery and build retrospective — 2026-09-15
 
 - Add four real UI screenshots captured with synthetic local demo data: Today, lesson/player, library, and learning activity.

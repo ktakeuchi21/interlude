@@ -47,6 +47,8 @@ Real screenshots of the app running locally, captured September 15, 2026. The **
 
 All **24 lesson texts** and their exercises are included. Generated audio belongs to an individual deployment and is not included in the repository. Healthcare examples are fictional teaching scenarios; they are not patient-specific advice or claims of deployed clinical outcomes.
 
+New lessons follow the [lesson voice guide](docs/LESSON_STYLE.md): teach concepts directly, keep routine publisher attribution in source notes, and name sources aloud only when their identity matters. Existing released texts and recordings are preserved until an explicit revision is published.
+
 ## Stack and why
 
 | Layer | Implementation | Why it fits this project |
