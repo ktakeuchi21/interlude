@@ -14,6 +14,18 @@ YouTube and podcasts gave me plenty to consume, but choosing something, switchin
 
 Interlude is my attempt to make that choice easier. The aim is a regular learning habit and useful understanding, with natural stopping points. Finishing playback is recorded separately from remembering or applying an idea. There is no infinite feed or streak penalty.
 
+## A look inside
+
+Real screenshots of the app running locally, captured September 15, 2026. The **Demo** profile, progress, calendar, and notes are synthetic examples, not my personal learning history. The player uses a silent local audio fixture to show its controls; these images do not demonstrate voice quality. Click an image to view it at full size.
+
+| Pick up your current lesson | Read or listen at your own pace |
+| --- | --- |
+| [![Today shows the current lesson, its saved audio position, and a Continue lesson button](docs/screenshots/today.jpg)](docs/screenshots/today.jpg) | [![Lesson reader with source count, version history, saved section, and a side player set to 1.5×](docs/screenshots/lesson-player.jpg)](docs/screenshots/lesson-player.jpg) |
+
+| Follow a few learning paths | See your learning rhythm |
+| --- | --- |
+| [![Three course cards in the library, with completion indicators and a persistent footer player](docs/screenshots/library.jpg)](docs/screenshots/library.jpg) | [![Twelve-week activity calendar and saved reflection and application notes, using synthetic demo data](docs/screenshots/progress.jpg)](docs/screenshots/progress.jpg) |
+
 ## What it does
 
 - **Start quickly:** Today surfaces an in-progress lesson or the next lesson in an active course.
@@ -53,6 +65,25 @@ All **24 lesson texts** and their exercises are included. Generated audio belong
 This is a **Next-style app built with vinext**, not a standard `next build` deployment. Production authentication depends on the trusted Sites dispatcher. Another host needs a real authentication integration before it can safely run this application.
 
 Read [Architecture and decisions](docs/ARCHITECTURE.md) for the tradeoffs, boundaries, and alternatives considered.
+
+## Experiments and lessons learned
+
+This grew through small implementation trials and feedback from personal use. These were **development experiments, not controlled user studies**. The most useful lessons came from trying the complete workflow, including what happens when something fails.
+
+| What we explored | What happened and what we learned |
+| --- | --- |
+| **A two-lesson pilot before a full library** | Started with two lessons to exercise sign-in, saved positions, audio, and phone use. Expanded to eight, then 24 lesson texts after playback checks and owner feedback. Prove the learning loop before scaling the catalog. |
+| **A home screen that answers “what next?”** | Personal use exposed the friction of finding the current lesson. Today now chooses a saved unfinished lesson or the next available lesson. A separate spacing fix gave the home cards consistent gaps. The entry point deserves as much attention as the library. |
+| **Faster audio and an expandable footer player** | Changed the default to 1.5× and made the footer open the correct lesson while preserving the media element and queue. The owner confirmed both refinements worked. A small interaction can matter every session. |
+| **OpenAI narration, then Google Chirp 3 HD** | The first course used saved OpenAI narration. We played Charon and Kore samples, tried a full Charon lesson, and selected Charon for new narration. Existing files remain playable. Voice choice and cost accounting are separate decisions; saved replays avoid new synthesis. |
+| **Testing in the actual Worker runtime** | Mocked provider tests missed a `fetch` redirect-mode incompatibility that failed during Google authorization. Reproducing it in workerd led to a fix and a runtime-specific test. Passing unit tests did not establish platform compatibility. |
+| **Recovery after an interrupted narration** | A live interruption exposed an unreadable error and a missing lesson-level recovery action. Both were fixed, but replacing a genuinely missing Chirp segment is still unfinished. A lost response does not prove the provider did no work, so an automatic retry can be the wrong recovery. |
+| **Plan-based authoring alongside API features** | The personal weekly workflow uses a Codex task and reviewed publication artifacts; optional in-app AI uses API credentials. This reduces the need for runtime generation but depends on an awake laptop. A refresh button alone was not an unattended schedule. |
+| **Learning measures beyond completion** | Completion, recall, application notes, and active time have separate records. A contribution-style calendar replaced the idea of streak pressure. These are useful signals to inspect, not proof of improved retention or less scrolling. |
+
+The recurring lessons: make the next action obvious, preserve the user's place, keep provider work durable, and make evidence and uncertainty visible. Long-term learning outcomes and total monthly costs still need measurement.
+
+The [build retrospective](docs/EXPERIMENTS.md) records the trials, observed results, decisions, and remaining questions—including lesson versioning, embedded media, and preparing a reproducible public repository.
 
 ## Try it locally
 
@@ -117,7 +148,7 @@ db/ + drizzle/       Schema and ordered migrations
 public/              PWA manifest, icons, online-only service worker
 scripts/             Local setup, tests, publication preparation, public-source check
 tests/               Core fixtures and loopback-only HTTP tests
-docs/                Product, architecture, setup, operations, source review, roadmap
+docs/                Product, architecture, experiments, screenshots, setup, operations
 ```
 
 This repository starts from a sanitized source snapshot. Production identifiers, owner-specific weekly publications, private operational logs, databases, credentials, and saved media are excluded. Public source does not grant access to the personal app.

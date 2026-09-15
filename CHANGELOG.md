@@ -1,5 +1,11 @@
 # Changelog
 
+## README gallery and build retrospective — 2026-09-15
+
+- Add four real UI screenshots captured with synthetic local demo data: Today, lesson/player, library, and learning activity.
+- Summarize the development experiments and lessons learned in the README, with a detailed retrospective covering product feedback, narration, runtime compatibility, recovery, evidence, scheduling, and public setup.
+- Distinguish observed results, owner-reported checks, illustrative screenshot data, and unresolved questions.
+
 ## Initial public source release — 2026-09-15
 
 - Publish the personal learning application's source with 24 cited foundation lessons.
